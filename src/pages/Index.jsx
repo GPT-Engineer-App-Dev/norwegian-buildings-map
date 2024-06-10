@@ -10,7 +10,7 @@ const buildings = [
     name: "Building 1",
     description: "Description for Building 1",
     position: [59.911491, 10.757933],
-    image: "/images/building1.jpg",
+    image: "https://example.com/images/building1.jpg",
     sensors: { temperature: 21, humidity: 45, aqi: 50, co2: 400, noise: 30, energy: 100 },
   },
   {
@@ -18,7 +18,7 @@ const buildings = [
     name: "Building 2",
     description: "Description for Building 2",
     position: [60.391263, 5.322054],
-    image: "/images/building2.jpg",
+    image: "https://example.com/images/building2.jpg",
     sensors: { temperature: 19, humidity: 50, aqi: 55, co2: 420, noise: 35, energy: 110 },
   },
   {
@@ -26,7 +26,7 @@ const buildings = [
     name: "Building 3",
     description: "Description for Building 3",
     position: [63.430515, 10.395053],
-    image: "/images/building3.jpg",
+    image: "https://example.com/images/building3.jpg",
     sensors: { temperature: 20, humidity: 55, aqi: 60, co2: 430, noise: 40, energy: 120 },
   },
   {
@@ -34,7 +34,7 @@ const buildings = [
     name: "Building 4",
     description: "Description for Building 4",
     position: [58.969975, 5.733107],
-    image: "/images/building4.jpg",
+    image: "https://example.com/images/building4.jpg",
     sensors: { temperature: 22, humidity: 60, aqi: 65, co2: 440, noise: 45, energy: 130 },
   },
   {
@@ -42,7 +42,7 @@ const buildings = [
     name: "Building 5",
     description: "Description for Building 5",
     position: [59.131309, 11.387104],
-    image: "/images/building5.jpg",
+    image: "https://example.com/images/building5.jpg",
     sensors: { temperature: 18, humidity: 50, aqi: 70, co2: 450, noise: 50, energy: 140 },
   },
   {
@@ -50,7 +50,7 @@ const buildings = [
     name: "Building 6",
     description: "Description for Building 6",
     position: [69.649205, 18.955324],
-    image: "/images/building6.jpg",
+    image: "https://example.com/images/building6.jpg",
     sensors: { temperature: 16, humidity: 45, aqi: 75, co2: 460, noise: 55, energy: 150 },
   },
   {
@@ -58,7 +58,7 @@ const buildings = [
     name: "Building 7",
     description: "Description for Building 7",
     position: [68.43925, 17.42158],
-    image: "/images/building7.jpg",
+    image: "https://example.com/images/building7.jpg",
     sensors: { temperature: 15, humidity: 40, aqi: 80, co2: 470, noise: 60, energy: 160 },
   },
   {
@@ -66,7 +66,7 @@ const buildings = [
     name: "Building 8",
     description: "Description for Building 8",
     position: [70.66235, 23.68801],
-    image: "/images/building8.jpg",
+    image: "https://example.com/images/building8.jpg",
     sensors: { temperature: 14, humidity: 35, aqi: 85, co2: 480, noise: 65, energy: 170 },
   },
   {
@@ -74,7 +74,7 @@ const buildings = [
     name: "Building 9",
     description: "Description for Building 9",
     position: [59.913869, 10.752245],
-    image: "/images/building9.jpg",
+    image: "https://example.com/images/building9.jpg",
     sensors: { temperature: 21, humidity: 50, aqi: 90, co2: 490, noise: 70, energy: 180 },
   },
   {
@@ -82,7 +82,7 @@ const buildings = [
     name: "Building 10",
     description: "Description for Building 10",
     position: [60.472024, 8.468946],
-    image: "/images/building10.jpg",
+    image: "https://example.com/images/building10.jpg",
     sensors: { temperature: 19, humidity: 55, aqi: 95, co2: 500, noise: 75, energy: 190 },
   },
 ];
