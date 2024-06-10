@@ -1,4 +1,4 @@
-import { Box, Text, Image, VStack, HStack, Divider, Badge, Flex } from "@chakra-ui/react";
+import { Box, Text, Image, VStack, HStack, Divider, Badge } from "@chakra-ui/react";
 
 const BuildingInfoCard = ({ building }) => {
   if (!building) return null;
@@ -17,7 +17,12 @@ const BuildingInfoCard = ({ building }) => {
       zIndex="1000"
     >
       <VStack spacing={4} align="start">
-        <Image src={building.image} alt={building.name} borderRadius="lg" />
+        <Image 
+          src={building.image || 'https://via.placeholder.com/300'} 
+          alt={building.name} 
+          borderRadius="lg" 
+          fallbackSrc="https://via.placeholder.com/300"
+        />
         <Text fontSize="2xl" fontWeight="bold">
           {building.name}
         </Text>
