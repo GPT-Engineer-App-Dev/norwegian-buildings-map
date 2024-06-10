@@ -3,6 +3,8 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Container } from "@chakra-ui/react";
 import BuildingInfoCard from "../components/BuildingInfoCard";
 import "leaflet/dist/leaflet.css";
+import L from 'leaflet';
+import buildingPin from '../../public/images/building-pin.png';
 
 const buildings = [
   {
@@ -87,6 +89,13 @@ const buildings = [
   },
 ];
 
+const buildingIcon = new L.Icon({
+  iconUrl: buildingPin,
+  iconSize: [32, 32],
+  iconAnchor: [16, 32],
+  popupAnchor: [0, -32],
+});
+
 const Index = () => {
   const [selectedBuilding, setSelectedBuilding] = useState(null);
 
@@ -101,6 +110,7 @@ const Index = () => {
           <Marker
             key={building.id}
             position={building.position}
+            icon={buildingIcon}
             eventHandlers={{
               click: () => {
                 setSelectedBuilding(building);
