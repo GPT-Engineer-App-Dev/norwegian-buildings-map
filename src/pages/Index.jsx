@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Container } from "@chakra-ui/react";
 import BuildingInfoCard from "../components/BuildingInfoCard";
@@ -98,6 +99,7 @@ const buildingIcon = new L.Icon({
 
 const Index = () => {
   const [selectedBuilding, setSelectedBuilding] = useState(null);
+  const navigate = useNavigate();
 
   return (
     <Container maxW="100vw" height="100vh" p={0}>
@@ -113,7 +115,7 @@ const Index = () => {
             icon={buildingIcon}
             eventHandlers={{
               click: () => {
-                setSelectedBuilding(building);
+                navigate(`/building/${building.id}`);
               },
             }}
           >
@@ -121,7 +123,7 @@ const Index = () => {
           </Marker>
         ))}
       </MapContainer>
-      <BuildingInfoCard building={selectedBuilding} />
+      <BuildingInfoCard building={selectedBuilding} onClick={() => navigate(`/building/${selectedBuilding?.id}`)} />
     </Container>
   );
 };
